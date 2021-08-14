@@ -1,8 +1,152 @@
+/* start of variables */
 :root {
     /* color variables */
     --primary1: hsl(225, 100%, 94%);
     --primary2: hsl(245, 75%, 52%);
-    --neutral1: hsl(225, 100%, 98%);
+    --neutral1: hsl(228, 35%, 92%);
     --neutral2: hsl(224, 23%, 55%);
     --neutral3: hsl(223, 47%, 23%);
 }
+/* end of variables */
+/* start of global rules */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px;
+    background-color: var(--neutral1, #E0E8FF);
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+ul{
+    list-style: none;
+}
+/* 
+}
+
+@media (min-width: 576px) { 
+    .container {
+        width: 550px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+} */
+/* end of global rules */
+/* start of container */
+.container {
+    background-color: white;
+    width: 470px;
+    border-radius: 20px;
+    /* height: 500px; */
+    margin: 70px auto;
+    overflow: hidden;
+    font-weight: 500;
+    max-width: 90%;
+}
+.container > * {
+    margin-bottom: 30px;
+}
+.container .image {
+    margin-bottom: 35px;
+}
+.container .image img {
+    width: 100%;
+}
+.container h1 {
+    color: var(--neutral3);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25 px;
+    font-weight: 900;
+    text-align: center;
+}
+.container > p {
+    color: var(--neutral2);
+    text-align: center;
+    line-height: 1.6;
+    /* font-weight: 500; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    max-width: 80%;
+}
+.container .card {
+    background-color: #F8F9FE;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 48px 1fr 60px ;
+    column-gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+.container .card div p {
+    color: var(--neutral2);
+}
+.container .card h2 {
+    font-size: 16px;
+}
+.container .card a {
+    color: var(--primary2);
+    font-weight: 700;
+}
+.container .card a:hover {
+    opacity: 70%;
+}
+.container button {
+    background-color: var(--primary2);
+    width: 80%;
+    color:white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: inherit;
+    font-weight: 700;
+    box-shadow: 0px 10px 20px 10px #dedbf8;
+    cursor: pointer;
+}
+.container button:hover {
+    opacity: 70%;
+}
+.container > a {
+    display: block;
+    text-decoration: none;
+    color: var(--neutral2);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+}
+.container > a:hover {
+    color:var(--neutral3);
+}
+/* end of container */
